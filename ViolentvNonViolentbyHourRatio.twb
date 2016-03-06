@@ -1,0 +1,866 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook source-platform='mac' version='9.0' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 9000.15.0527.1215                                -->
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='seattle_incidents_summer_2014_Revised' inline='true' name='textscan.42435.280318854200' version='9.0'>
+      <connection class='textscan' directory='/Users/paul.garton/Documents/coursera/CrimeData' filename='seattle_incidents_summer_2014_Revised.csv' password='' server=''>
+        <relation name='seattle_incidents_summer_2014_Revised#csv' table='[seattle_incidents_summer_2014_Revised#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='RMS CDW ID' ordinal='0' />
+            <column datatype='integer' name='General Offense Number' ordinal='1' />
+            <column datatype='string' name='Offense Code' ordinal='2' />
+            <column datatype='integer' name='Offense Code Extension' ordinal='3' />
+            <column datatype='string' name='Offense Type' ordinal='4' />
+            <column datatype='boolean' name='Violent Crime' ordinal='5' />
+            <column datatype='string' name='Summary Offense Code' ordinal='6' />
+            <column datatype='string' name='Summarized Offense Description' ordinal='7' />
+            <column datatype='datetime' name='Date Reported' ordinal='8' />
+            <column datatype='datetime' name='Occurred Date or Date Range Start' ordinal='9' />
+            <column datatype='string' name='Day of Week' ordinal='10' />
+            <column datatype='integer' name='Hour of Day' ordinal='11' />
+            <column datatype='datetime' name='Occurred Date Range End' ordinal='12' />
+            <column datatype='string' name='Hundred Block Location' ordinal='13' />
+            <column datatype='string' name='District/Sector' ordinal='14' />
+            <column datatype='string' name='Zone/Beat' ordinal='15' />
+            <column datatype='real' name='Census Tract 2000' ordinal='16' />
+            <column datatype='real' name='Longitude' ordinal='17' />
+            <column datatype='real' name='Latitude' ordinal='18' />
+            <column datatype='string' name='Location' ordinal='19' />
+            <column datatype='integer' name='Month' ordinal='20' />
+            <column datatype='integer' name='Year' ordinal='21' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>RMS CDW ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RMS CDW ID]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>RMS CDW ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>General Offense Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[General Offense Number]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>General Offense Number</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offense Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Offense Code]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Offense Code</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offense Code Extension</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Offense Code Extension]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Offense Code Extension</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offense Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Offense Type]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Offense Type</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Violent Crime</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Violent Crime]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Violent Crime</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Summary Offense Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Summary Offense Code]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Summary Offense Code</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Summarized Offense Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Summarized Offense Description]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Summarized Offense Description</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Reported</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Date Reported]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Date Reported</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;datetime&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Occurred Date or Date Range Start</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Occurred Date or Date Range Start]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Occurred Date or Date Range Start</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;datetime&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day of Week</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Day of Week]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Day of Week</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hour of Day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hour of Day]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Hour of Day</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Occurred Date Range End</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Occurred Date Range End]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Occurred Date Range End</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;datetime&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hundred Block Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hundred Block Location]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Hundred Block Location</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>District/Sector</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[District/Sector]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>District/Sector</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zone/Beat</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Zone/Beat]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Zone/Beat</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Census Tract 2000</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Census Tract 2000]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Census Tract 2000</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name></remote-name>
+            <remote-type>0</remote-type>
+            <parent-name>[seattle_incidents_summer_2014_Revised#csv]</parent-name>
+            <remote-alias></remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='violentNoviolent' datatype='real' name='[Calculation_2790306073638510]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='count([Violent Crime])/count([Number of Records])' />
+      </column>
+      <column caption='Violent' datatype='integer' name='[Calculation_4650306075032505]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='count(if [Violent Crime] = TRUE then 1 else null end)' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Hour of Day]' role='dimension' type='ordinal'>
+      </column>
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative'>
+      </column>
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+      </column>
+      <column datatype='integer' name='[Month]' role='dimension' type='quantitative'>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Rms Cdw Id' datatype='integer' name='[RMS CDW ID]' role='measure' type='quantitative'>
+      </column>
+      <column caption='nonViolent' datatype='integer' name='[Violent (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='count(if [Violent Crime] = TRUE then null else 1 end)' />
+      </column>
+      <column datatype='boolean' name='[Violent Crime]' role='dimension' type='nominal'>
+      </column>
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative'>
+      </column>
+      <column datatype='string' name='[Zone/Beat]' role='dimension' type='nominal'>
+      </column>
+      <column-instance column='[Violent Crime]' derivation='None' name='[none:Violent Crime:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Zone/Beat]' derivation='None' name='[none:Zone/Beat:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Zone/Beat:nk]' type='palette'>
+            <map to='#17becf'>
+              <bucket>&quot;J1&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;Q3&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;B1&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;J3&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;R2&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;C2&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;L1&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;S3&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;F3&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;O2&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;E2&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;N1&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;W3&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;D3&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;M2&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;W1&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;C3&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;L2&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;U1&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;J2&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;R1&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;99&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;B2&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;K1&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;R3&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;G2&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;Q1&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;E3&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;N2&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;E1&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;M3&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;W2&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;G1&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;O3&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;D1&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;L3&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;U2&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;G3&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;Q2&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;F1&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;N3&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;F2&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;O1&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;B3&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;K2&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;S1&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;D2&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;M1&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;U3&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;C1&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;K3&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;S2&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Violent Crime:nk]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>false</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>%null%</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Violent Crime Proportion of all Reported Crimes in Seattle Urban Core by Hour of Day (Committed)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='seattle_incidents_summer_2014_Revised' name='textscan.42435.280318854200' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='textscan.42435.280318854200'>
+            <column caption='([Violent])/([nonViolent])' datatype='real' name='[Calculation_2690306075606271]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='([Calculation_4650306075032505])/([Violent (copy)])' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Hour of Day]' role='dimension' type='ordinal'>
+            </column>
+            <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative'>
+            </column>
+            <column aggregation='Avg' datatype='real' name='[Longitude]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+            </column>
+            <column-instance column='[Hour of Day]' derivation='None' name='[none:Hour of Day:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Latitude]' derivation='None' name='[none:Latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Longitude]' derivation='None' name='[none:Longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2690306075606271]' derivation='User' name='[usr:Calculation_2690306075606271:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[textscan.42435.280318854200].[none:Latitude:qk]' included-values='in-range'>
+            <min>47.600000000000001</min>
+            <max>47.619999999999997</max>
+          </filter>
+          <filter class='quantitative' column='[textscan.42435.280318854200].[none:Longitude:qk]' included-values='in-range'>
+            <min>-122.360057985</min>
+            <max>-122.3224</max>
+          </filter>
+          <slices>
+            <column>[textscan.42435.280318854200].[none:Latitude:qk]</column>
+            <column>[textscan.42435.280318854200].[none:Longitude:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#b40f1e' />
+                <format attr='size' value='0.81259667873382568' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.42435.280318854200].[usr:Calculation_2690306075606271:qk]</rows>
+        <cols>[textscan.42435.280318854200].[none:Hour of Day:ok]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[textscan.42435.280318854200].[:Measure Names]</field>
+          <field>[textscan.42435.280318854200].[none:Day of Week:nk]</field>
+          <field>[textscan.42435.280318854200].[none:Hour of Day:ok]</field>
+          <field>[textscan.42435.280318854200].[none:Latitude:qk]</field>
+          <field>[textscan.42435.280318854200].[none:Longitude:qk]</field>
+          <field>[textscan.42435.280318854200].[none:Summarized Offense Description:nk]</field>
+          <field>[textscan.42435.280318854200].[none:Violent Crime:nk]</field>
+          <field>[textscan.42435.280318854200].[none:Zone/Beat:nk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAAACXBIWXMAAAsTAAALEwEAmpwY
+      AAAPU0lEQVR4nO3dW3Ab13kH8D1nr1gABAgCIHgF7yAlSpRN27Vku1JsJ/JDO85D+9CHTl46
+      bTOTtjPtNDOZaTPuTPrSaWfqNk2aRE4zk2QmiRNHY9mxncZyYldkEomObMkiZYk3EARAQiCI
+      6+4Ce+kDZAAkFxSpQ+Eifb+nXfBw8UH86+zZC/YgwzAoAO4WrncBoLlBgAARCND9yTCM2gxO
+      mBq8B7hHLky/2+lysa3ebDrX7m5FlBFfi3UPDkaDC6tL18XuY7eWPqAousM/ohXkzo4OBiOH
+      03GwNUCAmtjK0o3IkkUXW/rbnB/PLrrsVFbD3T3t8ytrC0H5j5/siKzMPjFx+NU33mYMPdzT
+      n88X/vAzTx9sDQiOwprX8vKSXRRSmezaRsYhIFnH7jZ3l89z9fLvBIfL3z+wNHclkZa83rbw
+      asRm4fOM89GJ4YOtAQL0oJAlieUFGqOD3ez+ApTP5yVJomn6YIsAzWt/AVIUBWPMsuy9Kwg0
+      FziMB0QgQIAIBAgQMT8PVFByM5c/PHJsMr2+spqQnDyVx9ax4b7a1gaagHmAYivXOZ6/Hoxp
+      seW4jDfyGWurT5Z9kiTZbLYalwgamfkuzOpoW1kO6kpSsNpVSXG6HFIux/OCKIo1rg80uKqH
+      8YZuILzlpwih/R7GJ347Y6hacZlpsbeMjxGWCxrNvT0P9Jb/iJpMFZddJx47/rOX910gaGxw
+      FAaIQIAAEQgQIAIBAkQgQIAIBAgQgQABIhAgQAQCBIhAgAARCBAgYn47RzIWPD818/CJp5XV
+      ufmEbqNyKrafOvlYjYsDjc+8B8omN/r7+mPxlM5ZcvGwYnCcUZBlOZfL1bg+0ODMeyBPz/Dy
+      zIcDHjZXsPX0D7vsTAFZLYKA0QF/qwg0O/MAsbz1+InjxeV+fw3LAc0GBtGACAQIEIEAASIQ
+      IECkCZ4PFHn1jcjZ10uro1/+otjXW8d6QKUmCFBm7kbklXOl1YG/+nMIUOOAXRggAgECRCBA
+      gAgECBCBAAEi5kdhxcdUI4QQogyDKn79GWNIG9jOPECJ6Pz56csTjz/t5eQ3L1y2ailH9+hT
+      jx078LfXFEWJrJVW2VYH6zjgJ2GDe8o8QIqU9ff6N5OZaOiaJGUDo0PR6Joky/JBPx8ofXX2
+      wjPPl1YD//j3Q3/3hQPcPrjXzAPk7R1bT8363LwrcHp0Iy5nEo62bgHuBwI7mAeIZriJYxPF
+      ZY/bTbndNSwJNBMYFwMiECBABAIEiECAABEIECACAQJEIECACAQIEIEAASIQIEAEAgSImAdI
+      zcuXZi5JeZUy9KXFYHDhxs3lcI0rA03B/GLq+sochdBcMObUYr/+YKXb24J03O1rkyXJarXW
+      uETQyMx7INHmXFkOIikt6ZhSFVWTZIriWJbn+RrXBxqceQ/kbO/77PN+hBFFUYfGxou3tCKE
+      4K5WsE3Vb6aiihnqEdxHBqqAHgUQgQABIhAgQAQCBIhAgAARCBAgAgECRCBAgAgECBCBAAEi
+      ECBAxPxaWCoeemdqZvL4p6T1+floykYptvb+Y4eHa1wcaHzmPVAmEevr64/EU15fTyae4Ky2
+      1eCCBNM9gR3MA+TpHkpvpjyiEY/HugcGbFbB7x8UBEEUxRrXBxpclemeBPuTTz1ZXB6oYTWg
+      6ZR7IMMwwuHwtWvXUqlU8Q4yAO6oHKBMJhMKhVRVnZ+fr2NBoLmUd2GGYWCMaZqG2+bB3pV7
+      IJvNZhhGNBrt7OyEe1jBHpUDhDHWNM1ut0N6wN5tOYz3+XyqqmqaVq9qQNPZEiBFUTY2NnRd
+      r1c1oOmUAyRJ0ubmJs/zLMvWsSDQXMoBslgsHMd5vd5sNlvHgkBz2dIDIYRmZ2ctFksdCwLN
+      ZcuZaE3TTp48KQhCHQsCzaUcIEEQ7Hb7lStXZFmuY0GguZTPRCuKUigUPB4PxjgRXXh76v2H
+      TjxDpVZ/88GCz8Gr2PbpZ5+oY6GgMW0ZRCuKwvM8QkjOpvv7+hObGYfTZaVVg7GItCHD/UBg
+      hy3ngex2+8bGhqqq3t4AZaB+l6Coeu/Q6PBAZ8fAgAXuBwI7bLkfyDAMlmV1XadZ6+Tkw8UX
+      uzrrUddBM3Q9t7BcWqXtVqHdW8d67htbApTP5zmOuy9PJGqS/MtHTpVWO//o+YfO/Me2NqmP
+      ZkPff7myjfPhiW1trv/zv0VeOVdaPfHzV7g218GX2zzKAcrn8xhjVVVzuVxxJFTHsuoit7C8
+      +LWXSqstRw7vDFA+dis7v1haNR7464blMZCiKBhjj8cTjUbrWBBoLuUeiGGYdDqtqurw8PAD
+      2P2Au1PugViWdTgcwWAwEonAPdFgj8o9UCaTSSaTXV1d8Xjc7/fXsaZmd+NfXswnNovLQodv
+      8K//or713FPlALEsm8vldF2H9BBa+d6PpGCouGwfH7u/A1TehYmi2N7ezrKs0+mEMRDYo3KA
+      EEKKosDoB+zLlksZgiAkEgm4Gg/2bsv9QCzLGobBcVwdCwLNZcvtHKurq4lEgqIoKR1/d/rS
+      5PHfT4ZuLN+SWnmNsbcfGRusX52gQW25ocxmswUCAUmSNiLLXV3dS+ENt7ddLshSvrC+tgqP
+      dwE7lXugXC5nsVhCoVAgEBC53o+mZnoGhauzS1ary8JItC4KvIArjs4Sl34nr0ZKq74/OI1o
+      uqa1gztR1mMb0xdLqy1HD1v7D/gcTTlACKFsNtvb28swDCO4P3P6NEVR1FDV3dbi116qvC79
+      XPQ6DQFqMKkr197/3OdLq+P/+hXrn/3pwb7FlsN4hFAikVBV9WDfA9zHygFKp9OKonAcd/Xq
+      VTgbBPaovAuz2+1Op7NQKLS0tNSxINBcygESBCEQCKiqyrIsXMoAe7TlllaMMZxFBPtSdc7U
+      5rL439/OLQWLy7Qojn75i/Wt58FxnwQocvb1xK8vFZdZVysEqGZgqgNABAIEiECAABEIECAC
+      AQJEzI/CMonwO1Mzk8dP5WLL1xeirXZOp+1PHH+oxsWBxmfeAyVvrfX5+8KxpNfjNRCrqzSd
+      l+DxLmCnatM9DcZjcZ8FzS0sORz2VrdVdLvh8S5gJ/NdGGdpOfWpUxRFdfd21bQc0GxgEA2I
+      QIAAEQgQIHKfXEy9/0TPvbn0ze+UVse+8g+OifH6lVMVBKhBSeFI/L3p0mphM1nHYnYBuzBA
+      BAIEiECAABEYAz3ols98N3L29dLqsW+9KHS07/3XIUAPuuziUvz/yqN1bZ8P94FdGCBi3gMZ
+      uhZaDXd2ddPIyGblvJzJqajL56lxcfcrTZZTV2ZLq4LPa+m5m2uOoR++kr25UFxGGI986W8P
+      pr79MA/Q+srszcXYpsb56NT7N2NyfLl94HCHt03XdYyh0yIlraxOffqzpdWBv/nLsX/60l1s
+      J/KTc+s/P19cRjRdlwCZpwFjupAvZFPJ1s5em8gPBAKp2Hq+UFAUpcb1gQZn3gO5uwIPCW6r
+      zYoxNzkxruYlf9+owPPwhWewjXmAEMYez+0RjyDwlMDXsCTQTGBAA4hAgAARCBAgAgECRCBA
+      gAgECBCBAAEiECBABAIEiECAABEIECBifi1Mzibem740+fhTVpy/vhjCBUnB1oePjta4OND4
+      zAMUX13s6OhcCMcPdVrj6wkOI0zlZVmWJclms9W4RFB3K9/7UX5jo7jMOhy9n/uT0o/MA9Ta
+      3n1lamZwyGrwdp/Xlcsm8pRFELZM9wQeHAtf/VZm7uPistjvv3OARIf39HPPFSc8GDs8Vpx7
+      BbIDdqr6rYzK6TJg6gxQDRyFASIQIEAEAgSIQIAAEQgQIAIBAkQgQIAIBAgQgQABIhAgQAQC
+      BIiYXwvLbq79cnpm8vjJRGguvJm3ozzf2jVxaKjGxYHGZ94Dba6v+v3+0NpmLClZaN2gmbVw
+      UILpnsAO5gFydw2shaMOLt/hdem0yPPY7fYJPEz3BLYz34XxVuczzz5TXB6uYTWg6cAgGhCB
+      AAEiECBABAIEiECAABEIECACAQJEIECACAQIEDEPkKFry8vLmm4oUmYlvLYZj93aTNW4MtAU
+      qky2Ery2GIyndCEXupHKqojWacSdevbJGhcHGp95gDDNypKsZNIFw5DVPI8piqJrWxhoDlUm
+      W+keeVT02K1WHXXnJEVgsU4x8P14sBMqPnljL2RZliQJIcQwDEVRlGFQFKVqGkPTFEVRnzyA
+      QZIki8Vy+3cI2siyLAhCqYFuGJRhYIwrG/A8f/vBD/eimE8aaJqm6zrLsqUGmqZhmkb34FNv
+      a2MYhm4YdMWnVhSFZdnbs7bd7SfSdb1QKPA8X/5Euo4RQgjtt9p9zJkqCALGGGN8O0BV0DRd
+      fuO7bWMYxh3b0DQtCMLuTw45kGJUVdV1neO4e/1Ge2nDsizDMDS924jijhvRNE1V1dsBIquW
+      fuGFF3ZvtO0XKmcs1OTUS9/+RhY5/B3u0ou3/6eW2uRzZ776XyOPPs5XHPBta3Np6vxP355+
+      ZGK8lAaEUGUbw9DfevUHN9bSw309lRupTI9hGGe/fwY5e9wOa7U3Cl17/xs/eO3I0aM8S1dr
+      8+arL1+ejx4aHii9gjGu/INp+dwPv/s/C7HC6GB3tY0kovMvfv2Mf+yYw8JVazP9i9feuHDx
+      yOFxGiPTNlcuvvPbj1cvXzi/EM4EhnqLLzIMU/knmPnVa7OhzMVfnG3pCThEfudGgjc/PPer
+      i7GVm+9NX504OoY++USVvcC7b/04mMxP/e9PJc7d5WnduRFDlc588+s9gSPf+c9/P/R7T3Cf
+      vD/LskTngVQ54/Z1xNfju7TBDD/U10ntup90uxxWi3XXMRby9/pja5u7bCYZXvzo5vLGreQu
+      Wylg3GbBm+ndJiaOxmK3wmt69QY0J7o87U8/9cguG5FSSV1Vk2lplzYMx8Vvbaha1c80PDKs
+      awVkaykkE9XaDA0PI0SNDPYbuvl2fF19NpH1uGyC01ltIyOBEVWn+vv61iJV/pSYGxr0z838
+      Zj2V2kxkK3+yvx5oG5oXc8nkkWMTVqFq944Q5gVLi7OVrhoQIxoOs6LD392xy/5obS3aPxxo
+      c9irNeBsLeNjAbfXK1YvhsZUHlnGhv2V/+m3aXO1trZ3dHjbdgk0x3GeNtcu1XIWkWaF0ZEh
+      nqm6r2Ew1d7Z29PhrbYdTDMW0e6ysF0jY64Wq2kbhuEE0drmbrO1OHjWZGiBaVrgBTmTsbe4
+      ujq9pu/EMJwoWtPJ9KHxcZtosl9DCAuC0B8YHx3wezu8TMW/3v8D2WiHqqKf6GAAAAAASUVO
+      RK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
